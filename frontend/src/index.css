@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .neon-text-pink {
+    text-shadow: 0 0 8px #ff2d78;
+  }
+  .neon-text-cyan {
+    text-shadow: 0 0 8px #00ffcc;
+  }
+  .neon-border-pink {
+    border: 1px solid rgba(255, 45, 120, 0.5);
+    box-shadow: inset 0 0 12px rgba(255, 45, 120, 0.1), 0 0 12px rgba(255, 45, 120, 0.1);
+  }
+  .neon-border-cyan {
+    border: 1px solid rgba(0, 255, 204, 0.3);
+    box-shadow: inset 0 0 12px rgba(0, 255, 204, 0.05);
+  }
+  .active-nav-glow {
+    filter: drop-shadow(0 0 5px rgba(255, 45, 120, 0.8));
+  }
+}
+
+.scanline {
+  width: 100%;
+  height: 100px;
+  z-index: 10;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(255, 45, 120, 0.05) 50%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.1;
+  position: absolute;
+  bottom: 100%;
+  animation: scanline 10s linear infinite;
+}
+
+@keyframes scanline {
+  0% { bottom: 100%; }
+  100% { bottom: -100%; }
+}
+
+.grid-bg {
+  background-image: linear-gradient(rgba(255, 45, 120, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 45, 120, 0.05) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+/* Custom Scrollbar */
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #ff2d78 #141422;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a12;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff2d78;
+  border-radius: 2px;
+}
