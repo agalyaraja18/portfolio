@@ -1,5 +1,6 @@
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import PixelBlast from './components/PixelBlast';
 import About from './components/About';
 import Education from './components/Education';
 import Skills from './components/Skills';
@@ -20,7 +21,25 @@ function App() {
 
   return (
     <div className="min-h-screen bg-background text-on-background relative overflow-x-hidden selection:bg-primary/30 selection:text-primary">
-      {/* Background patterns */}
+      {/* PixelBlast background */}
+      <div className="fixed inset-0 z-0 pointer-events-none opacity-30">
+        <PixelBlast
+          variant="circle"
+          pixelSize={5}
+          color="#D4AF37"
+          patternScale={3}
+          patternDensity={1.1}
+          pixelSizeJitter={0.4}
+          enableRipples
+          rippleSpeed={0.4}
+          rippleThickness={0.12}
+          rippleIntensityScale={1.5}
+          speed={0.4}
+          edgeFade={0.3}
+          transparent
+        />
+      </div>
+      {/* Background grid */}
       <div className="grid-bg fixed inset-0 z-0 pointer-events-none" />
       <div className="scanline pointer-events-none" />
 

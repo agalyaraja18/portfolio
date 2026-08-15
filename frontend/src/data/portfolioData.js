@@ -94,10 +94,10 @@ export const portfolioData = {
       id: 1,
       institution: 'Rajalakshmi Engineering College',
       degree: 'B.Tech Information Technology',
-      field: 'Cumulative GPA: 8.26 (Till 7th semester) | Chennai, Tamil Nadu',
+      field: 'Cumulative GPA: 8.26 | Chennai, Tamil Nadu',
       start_year: 2022,
-      end_year: 'PRESENT',
-      gpa: '8.26 (Till 7th semester)',
+      end_year: 2026,
+      gpa: '8.26',
       order: 1,
     },
     {
