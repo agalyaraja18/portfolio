@@ -58,19 +58,9 @@ export default function Projects({ projects }) {
                         href={project.live_url} 
                         target="_blank" 
                         rel="noreferrer"
-                        className="w-fit neon-border-cyan px-6 py-2 text-secondary font-label uppercase tracking-widest hover:shadow-[0_0_16px_rgba(0,255,204,0.4)] hover:bg-secondary/10 transition-all duration-300"
+                        className="w-fit neon-border-cyan px-6 py-2 text-secondary font-label uppercase tracking-widest hover:bg-secondary/10 transition-all duration-300"
                       >
                         Project Dossier
-                      </a>
-                    )}
-                    {project.github_url && (
-                      <a 
-                        href={project.github_url} 
-                        target="_blank" 
-                        rel="noreferrer"
-                        className="text-on-surface-variant hover:text-secondary transition-colors duration-300 font-label text-sm uppercase tracking-wider"
-                      >
-                        Source Code
                       </a>
                     )}
                   </div>
@@ -128,17 +118,6 @@ export default function Projects({ projects }) {
                         title="Live Demo"
                       >
                         link
-                      </a>
-                    )}
-                    {project.github_url && (
-                      <a 
-                        href={project.github_url} 
-                        target="_blank" 
-                        rel="noreferrer"
-                        className="material-symbols-outlined text-secondary hover:scale-125 transition-transform duration-300 cursor-pointer"
-                        title="Source Code"
-                      >
-                        source
                       </a>
                     )}
                   </div>

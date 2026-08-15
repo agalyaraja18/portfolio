@@ -15,7 +15,7 @@ export default function Skills({ skills }) {
       icon: 'code',
       accentClass: 'text-secondary',
       borderClass: 'neon-border-cyan',
-      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(0,255,204,0.15)]',
+      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(245,242,235,0.1)]',
       list: programmingSkills.length > 0 ? programmingSkills : [{ id: 1, name: 'Python' }]
     },
     {
@@ -23,7 +23,7 @@ export default function Skills({ skills }) {
       icon: 'web',
       accentClass: 'text-primary',
       borderClass: 'neon-border-pink',
-      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(255,45,120,0.15)]',
+      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(212,175,55,0.12)]',
       list: frontendSkills.length > 0 ? frontendSkills : [
         { id: 2, name: 'HTML' },
         { id: 3, name: 'Bootstrap' },
@@ -36,7 +36,7 @@ export default function Skills({ skills }) {
       icon: 'terminal',
       accentClass: 'text-secondary',
       borderClass: 'neon-border-cyan',
-      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(0,255,204,0.15)]',
+      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(245,242,235,0.1)]',
       list: backendSkills.length > 0 ? backendSkills : [
         { id: 6, name: 'Django' },
         { id: 7, name: 'PHP' },
@@ -48,7 +48,7 @@ export default function Skills({ skills }) {
       icon: 'palette',
       accentClass: 'text-primary',
       borderClass: 'neon-border-pink',
-      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(255,45,120,0.15)]',
+      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(212,175,55,0.12)]',
       list: nonTechnicalSkills.length > 0 ? nonTechnicalSkills : [{ id: 9, name: 'UI/UX design' }]
     },
     {
@@ -56,7 +56,7 @@ export default function Skills({ skills }) {
       icon: 'psychology',
       accentClass: 'text-secondary',
       borderClass: 'neon-border-cyan',
-      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(0,255,204,0.15)]',
+      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(245,242,235,0.1)]',
       list: softSkills.length > 0 ? softSkills : [
         { id: 10, name: 'Fast learner' },
         { id: 11, name: 'Good communication' },
@@ -71,7 +71,7 @@ export default function Skills({ skills }) {
       icon: 'construction',
       accentClass: 'text-primary',
       borderClass: 'neon-border-pink',
-      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(255,45,120,0.15)]',
+      hoverGlowClass: 'hover:shadow-[0_0_20px_rgba(212,175,55,0.12)]',
       list: toolsSkills.length > 0 ? toolsSkills : [
         { id: 16, name: 'Canva' },
         { id: 17, name: 'Figma' },
@@ -97,7 +97,7 @@ export default function Skills({ skills }) {
               className={`p-6 bg-background ${cat.borderClass} ${cat.hoverGlowClass} transition-all duration-300`}
             >
               <div className="flex items-center gap-3 mb-6">
-                <span className="material-symbols-outlined text-2xl" style={{ color: cat.accentClass.includes('primary') ? '#ff2d78' : '#00ffcc' }}>
+                <span className="material-symbols-outlined text-2xl" style={{ color: cat.accentClass.includes('primary') ? '#D4AF37' : '#F5F2EB' }}>
                   {cat.icon}
                 </span>
                 <h3 className="font-bold font-headline uppercase text-lg tracking-wide text-white">

@@ -9,7 +9,7 @@ export default function Footer({ about }) {
       <div className="flex flex-col md:flex-row justify-between items-center px-6 max-w-7xl mx-auto gap-4">
         <div className="flex items-center gap-2">
           <span className="font-label text-primary font-bold tracking-widest">{name}</span>
-          <span className="w-2 h-2 bg-secondary rounded-full animate-pulse shadow-[0_0_8px_#00ffcc]"></span>
+          <span className="w-2 h-2 bg-secondary rounded-full animate-pulse shadow-[0_0_8px_rgba(245,242,235,0.5)]"></span>
         </div>
         <p className="font-body text-on-surface-variant text-sm">
           © 2026 {name} Built in Neo-Tokyo.

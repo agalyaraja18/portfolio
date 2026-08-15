@@ -5,6 +5,7 @@ import Education from './components/Education';
 import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Certifications from './components/Certifications';
+import Publications from './components/Publications';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { portfolioData } from './data/portfolioData';
@@ -15,6 +16,7 @@ function App() {
   const projects = portfolioData.projects;
   const education = portfolioData.education;
   const certifications = portfolioData.certifications;
+  const publications = portfolioData.publications;
 
   return (
     <div className="min-h-screen bg-background text-on-background relative overflow-x-hidden selection:bg-primary/30 selection:text-primary">
@@ -30,6 +32,7 @@ function App() {
         <Education education={education} />
         <Skills skills={skills} />
         <Projects projects={projects} />
+        <Publications publications={publications} />
         <Certifications certifications={certifications} />
         <Contact about={about} />
       </main>
