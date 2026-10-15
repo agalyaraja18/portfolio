@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agalya R · UI/UX Designer</title>
+  <meta name="description" content="Portfolio of Agalya R, UI/UX Designer with a solid background in web development and design.">
+  <meta name="color-scheme" content="dark">
+  <script>
+    // Swap no-js for js-intro before first paint. The fallback reveals the hero if main.js never runs.
+    (function (d) {
+      d.className = d.className.replace(/\bno-js\b/, 'js-intro') + ' is-intro';
+      window.__introFallback = setTimeout(function () {
+        d.classList.add('hero-in');
+        d.classList.remove('is-intro');
+      }, 6000);
+    })(document.documentElement);
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="nav" data-stagger style="--i:0">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#home" aria-label="Agalya R, back to top">AR</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span class="sr-only">Menu</span>
+        <span class="nav__bars" aria-hidden="true"></span>
+      </button>
+      <nav class="nav__menu" id="nav-menu" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__inner container">
+        <div class="hero__text">
+          <p class="hero__eyebrow" data-stagger style="--i:1">Hello, I'm</p>
+          <h1 class="hero__name" id="hero-title" data-stagger style="--i:2">Agalya R</h1>
+          <p class="hero__tagline" data-stagger style="--i:3">UI/UX Designer with a solid background in web development and design.</p>
+          <div class="hero__ctas" data-stagger style="--i:4">
+            <a class="btn btn--solid" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Get in Touch</a>
+          </div>
+        </div>
+        <figure class="hero__photo" data-stagger="photo" style="--i:5">
+          <img src="assets/agalya.jpeg" alt="Portrait of Agalya R" width="788" height="1080" fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 class="section__title" id="about-title">About</h2>
+        <p class="about__summary">Enthusiastic and devoted beginner with a solid background in web development and design. Eager to put academic knowledge to use in a work environment. Aimed to producing top-notch work and helping the team succeed. Able to quickly adjust to changing technologies and novel challenges. Passionate about continuous learning and improving technical skills.</p>
+
+        <h3 class="sub__title">Education</h3>
+        <ol class="timeline">
+          <li class="timeline__item card">
+            <p class="timeline__meta">2022 – 2026 · Chennai, Tamil Nadu</p>
+            <h4 class="timeline__role">B.Tech Information Technology</h4>
+            <p class="timeline__org">Rajalakshmi Engineering College</p>
+            <p class="timeline__score">Cumulative GPA: 8.26</p>
+          </li>
+          <li class="timeline__item card">
+            <p class="timeline__meta">2021 – 2022 · Cuddalore, Tamil Nadu</p>
+            <h4 class="timeline__role">Higher Secondary</h4>
+            <p class="timeline__org">Krishnaswamy Memorial Matriculation Higher Secondary School</p>
+            <p class="timeline__score">94.50%</p>
+          </li>
+          <li class="timeline__item card">
+            <p class="timeline__meta">2019 – 2020 · Cuddalore, Tamil Nadu</p>
+            <h4 class="timeline__role">Secondary</h4>
+            <p class="timeline__org">Krishnaswamy Memorial Matriculation Higher Secondary School</p>
+            <p class="timeline__score">96.80%</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <h2 class="section__title" id="skills-title">Skills</h2>
+        <div class="skills">
+          <div class="skills__group card">
+            <h3>Languages</h3>
+            <ul class="chips"><li>Python</li></ul>
+          </div>
+          <div class="skills__group card">
+            <h3>Frameworks &amp; Libraries</h3>
+            <ul class="chips"><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>Flutter</li><li>Django</li><li>Flask</li><li>SQL</li><li>UI/UX design</li></ul>
+          </div>
+          <div class="skills__group card">
+            <h3>Tools</h3>
+            <ul class="chips"><li>Canva</li><li>Figma</li><li>Unity</li><li>Blender</li></ul>
+          </div>
+          <div class="skills__group card">
+            <h3>Soft Skills</h3>
+            <ul class="chips"><li>Fast learner</li><li>Good communication</li><li>Collaborative worker</li><li>Adaptability</li><li>Flexibility</li><li>Time management</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="projects__track">
+        <div class="projects__stage">
+          <div class="container">
+            <h2 class="section__title projects__title" id="projects-title">Projects</h2>
+          </div>
+          <div class="projects__viewport">
+          <ul class="projects__list">
+            <li class="project" style="--g1:#ff8fbf;--g2:#9c1b55;--g3:#2a0716">
+              <span class="project__num">01</span>
+              <h3 class="project__title">AssureSky – AI Powered Weather &amp; News Companion</h3>
+              <p class="project__desc">An AI-powered weather application built with Flutter and Flask that provides real-time weather updates, 7-day forecasts, and trending news. It features an intelligent AI Weather Advisor that analyzes current weather conditions and delivers personalized recommendations, helping users stay informed, prepared, and safe throughout the day.</p>
+              <ul class="chips chips--sm"><li>Flutter</li><li>Dart</li><li>Flask</li><li>Python</li><li>SQLite</li><li>OpenWeatherMap API</li><li>NewsAPI</li><li>Rule-Based AI</li></ul>
+              <a class="project__link" href="https://github.com/agalyaraja18" target="_blank" rel="noopener noreferrer">Code Base<span class="sr-only"> for AssureSky (opens in a new tab)</span></a>
+            </li>
+            <li class="project" style="--g1:#f7a8d0;--g2:#7a2a6e;--g3:#1d0a22">
+              <span class="project__num">02</span>
+              <h3 class="project__title">FDC – AI Powered Flutter Digital Classroom</h3>
+              <p class="project__desc">An AI-powered educational platform built with Flutter and Django that transforms study materials via PDF-to-audio conversion and intelligent analysis. It combines interactive quizzes with seamless classroom management, leveraging Google Gemini and OpenAI to deliver a robust, cross-platform learning experience.</p>
+              <ul class="chips chips--sm"><li>Flutter</li><li>Dart</li><li>Django</li><li>Python</li><li>Google Gemini</li><li>OpenAI</li><li>Django REST Framework</li></ul>
+              <a class="project__link" href="https://github.com/agalyaraja18" target="_blank" rel="noopener noreferrer">Code Base<span class="sr-only"> for FDC (opens in a new tab)</span></a>
+            </li>
+            <li class="project" style="--g1:#ff6fa3;--g2:#8a1240;--g3:#1a0510">
+              <span class="project__num">03</span>
+              <h3 class="project__title">CollabCode – IDE Platform</h3>
+              <p class="project__desc">Developed a platform for collaborative coding that includes a code editor, voice calls, chat, and a whiteboard. Facilitated teamwork in real time without requiring further extensions.</p>
+              <ul class="chips chips--sm"><li>React.js</li><li>Tailwind CSS</li><li>Node.js</li><li>Express.js</li><li>WebRTC</li><li>Socket.io</li><li>Judge0 API</li></ul>
+              <a class="project__link" href="https://collabcode-ide.vercel.app/" target="_blank" rel="noopener noreferrer">Code Base<span class="sr-only"> for CollabCode (opens in a new tab)</span></a>
+            </li>
+            <li class="project" style="--g1:#ffc2da;--g2:#b0306a;--g3:#2b0a1a">
+              <span class="project__num">04</span>
+              <h3 class="project__title">Paws &amp; Claws – Pet Adoption Website</h3>
+              <p class="project__desc">Built a web app to simplify pet adoption, letting users browse pets, apply, and track requests. Admins could manage pet records, adopters, and follow-ups.</p>
+              <ul class="chips chips--sm"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>PHP</li><li>SQL</li></ul>
+              <a class="project__link" href="https://github.com/agalyaraja18" target="_blank" rel="noopener noreferrer">Code Base<span class="sr-only"> for Paws &amp; Claws (opens in a new tab)</span></a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" id="achievements" aria-labelledby="achievements-title">
+      <div class="container">
+        <h2 class="section__title" id="achievements-title">Achievements &amp; Extracurriculars</h2>
+        <ul class="achievements">
+          <li class="card">
+            <h3>International Conference Paper Presentation &amp; Publication</h3>
+            <p class="achievements__date">January 2026</p>
+            <p>Presented the research paper "Flutter-Based Digital Classroom App for Android &amp; iOS" at ICAUC 2026, the International Conference on AI-Driven Smart Systems and Ubiquitous Computing, in association with the IEEE Systems Council. The paper was also published in IEEE Xplore. DOI: <a href="https://doi.org/10.1109/ICAUC68182.2026.11441214" target="_blank" rel="noopener noreferrer">10.1109/ICAUC68182.2026.11441214<span class="sr-only"> (opens in a new tab)</span></a>.</p>
+          </li>
+          <li class="card">
+            <h3>Internshala – Full Stack Development</h3>
+            <p>Full Stack Development course.</p>
+          </li>
+          <li class="card">
+            <h3>TANSAM Certificate – Immersive Experience in AR/VR</h3>
+            <p>Immersive Experience in AR/VR course, exploring the Blender and Unity tools.</p>
+          </li>
+          <li class="card">
+            <h3>NPTEL Courses</h3>
+            <p>Cognitive Psychology, Entrepreneurship and Human Computer Interaction.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 class="section__title" id="contact-title">Get in Touch</h2>
+        <p class="contact__lead">Based in Chennai, Tamil Nadu. Open to opportunities and collaborations.</p>
+        <ul class="contact">
+          <li class="card"><span class="contact__label">Email</span><a href="mailto:agalyar717@gmail.com">agalyar717@gmail.com</a></li>
+          <li class="card"><span class="contact__label">Phone</span><a href="tel:+919047446122">+91 90474 46122</a></li>
+          <li class="card"><span class="contact__label">LinkedIn</span><a href="https://www.linkedin.com/in/agalya-r-48600029a" target="_blank" rel="noopener noreferrer">agalya-r-48600029a<span class="sr-only"> (opens in a new tab)</span></a></li>
+          <li class="card"><span class="contact__label">GitHub</span><a href="https://github.com/agalyaraja18" target="_blank" rel="noopener noreferrer">agalyaraja18<span class="sr-only"> (opens in a new tab)</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner container">
+      <p>&copy; 2026 Agalya R</p>
+      <button class="footer__replay" type="button" data-replay>Replay intro</button>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
